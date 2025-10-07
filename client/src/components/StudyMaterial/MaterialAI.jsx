@@ -3,6 +3,8 @@ import toast, { Toaster } from "react-hot-toast";
 import MaintenancePage from '../Error/MaintenancePage';
 import HeadTags from "../HeadTags/HeadTags";
 import { useNavigate } from "react-router-dom";
+import Loader from "../Loader/Loader";
+import axios from "axios";
 
 const MaterialAI = () => {
     const subjects = ["ML","ISC","DS","NLP","HCI"]

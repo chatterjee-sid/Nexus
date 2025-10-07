@@ -1,5 +1,5 @@
 
-import { About, Achievements, AchievementsForm, AlumniMenu,  Events, Forms, Home, NotFound, RegisterForm, Teams } from '../components'
+import { About, Achievements, AchievementsForm, AlumniMenu, Events, Forms, Home, NotFound, RegisterForm, Teams } from '../components'
 import SignUpForm from '../components/SignUpForm/SignUpForm.jsx'
 
 import UserProfile from '../components/Profile/ProfilePage.jsx'
@@ -20,6 +20,11 @@ import EditPost from '../components/Post/EditPost.jsx'
 import AlumniSignUpForm from '../components/AlumniSignUpForm/AlumniSignUpForm.jsx'
 
 import Alumni from '../pages/Alumni/Alumni.jsx'
+
+import StudyMaterial from '../components/StudyMaterial/StudyMaterial.jsx'
+import MaterialAI from '../components/StudyMaterial/MaterialAI.jsx'
+import MaterialCS from '../components/StudyMaterial/MaterialCS.jsx'
+import PlacementMaterials from '../components/StudyMaterial/PlacementMaterials.jsx'
 
 export const DefaultRoutes = [
   {
@@ -150,6 +155,30 @@ export const DefaultRoutes = [
   //   title:'Merch Reference LeaderBoard',
   //   component: LeaderBoardPage
   // },
+
+  {
+    path: '/study-material',
+    title: 'Study Materials',
+    component: StudyMaterial
+  },
+
+  {
+    path: '/study-material/cse',
+    title: 'CSE Study Materials',
+    component: MaterialCS
+  },
+
+  {
+    path: '/study-material/ai',
+    title: 'AI Study Materials',
+    component: MaterialAI
+  },
+
+  {
+    path: '/study-material/placement',
+    title: 'Placement Assistance Materials',
+    component: PlacementMaterials
+  },
 
   {
     path: '/alumni/signup',
